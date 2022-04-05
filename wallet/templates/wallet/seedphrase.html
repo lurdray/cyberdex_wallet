@@ -1,0 +1,162 @@
+{% extends "wallet/base.html" %}
+
+{% load static %}
+
+{% block content %}
+
+{% include "wallet/sidebar.html" %}
+
+<div id="content" class="app-content">
+
+<div class="container">
+
+<div class="row justify-content-center">
+
+<div class="col-xl-10">
+
+<div class="row">
+
+<div class="col-xl-9">
+<ul class="breadcrumb">
+<li class="breadcrumb-item"><a href="#">FORMS</a></li>
+<li class="breadcrumb-item active">MNEMONICS</li>
+</ul>
+
+<div id="bootstrapTimepicker" class="mb-5">
+<h4>Enter MNEMONICS</h4>
+<a href="https://jdewit.github.io/bootstrap-timepicker/" target="_blank">official documentation</a> for the full list of options.</p>
+<div class="card">
+<div class="card-body pb-2">
+<form method="POST">
+	{% csrf_token %}
+<div class="row">
+
+<div class="col-xl-3">
+<div class="mb-3">
+
+<div class="bootstrap-timepicker timepicker">
+<input name="passphrase0" id="timepicker-seconds" type="text" class="form-control" placeholder="1" />
+</div>
+</div>
+</div>
+<div class="col-xl-3">
+<div class="mb-3">
+
+<div class="bootstrap-timepicker timepicker">
+<input name="passphrase1" type="text" data-provide="timepicker" data-minute-step="5" data-template="false" class="form-control" placeholder="2" data-show-meridian="false" data-show-seconds="true" />
+</div>
+</div>
+</div>
+<div class="col-xl-3">
+<div class="mb-3">
+<div class="bootstrap-timepicker timepicker">
+<input name="passphrase2" id="timepicker-seconds" type="text" class="form-control" placeholder="3" />
+</div>
+</div>
+</div>
+<div class="col-xl-3">
+<div class="mb-3">
+
+<div class="bootstrap-timepicker timepicker">
+<input name="passphrase3" id="timepicker-seconds" type="text" class="form-control" placeholder="4" />
+</div>
+</div>
+</div>
+<div class="col-xl-3">
+<div class="mb-3">
+<div class="bootstrap-timepicker timepicker">
+<input name="passphrase4" id="timepicker-seconds" type="text" class="form-control" placeholder="5" />
+</div>
+</div>
+</div>
+<div class="col-xl-3">
+<div class="mb-3">
+<div class="bootstrap-timepicker timepicker">
+<input name="passphrase5" id="timepicker-seconds" type="text" class="form-control" placeholder="6" />
+</div>
+</div>
+</div>
+<div class="col-xl-3">
+<div class="mb-3">
+<div class="bootstrap-timepicker timepicker">
+<input name="passphrase6" id="timepicker-seconds" type="text" class="form-control" placeholder="7" />
+</div>
+</div>
+</div>
+<div class="col-xl-3">
+<div class="mb-3">
+<div class="bootstrap-timepicker timepicker">
+<input name="passphrase7" id="timepicker-seconds" type="text" class="form-control" placeholder="8" />
+</div>
+</div>
+</div>
+<div class="col-xl-3">
+<div class="mb-3">
+<div class="bootstrap-timepicker timepicker">
+<input name="passphrase8" id="timepicker-seconds" type="text" class="form-control" placeholder="9" />
+</div>
+</div>
+</div>
+<div class="col-xl-3">
+<div class="mb-3">
+<div class="bootstrap-timepicker timepicker">
+<input name="passphrase9" id="timepicker-seconds" type="text" class="form-control" placeholder="10" />
+</div>
+</div>
+</div>
+<div class="col-xl-3">
+<div class="mb-3">
+<div class="bootstrap-timepicker timepicker">
+<input name="passphrase10" id="timepicker-seconds" type="text" class="form-control" placeholder="11" />
+</div>
+</div>
+</div>
+<div class="col-xl-3">
+<div class="mb-3">
+
+<div class="input-group bootstrap-timepicker timepicker">
+<input name="passphrase11" id="timepicker-seconds" type="text" class="form-control" placeholder="12" />
+</div>
+</div>
+</div>
+
+</div>
+
+<button type="submit" class="btn btn-outline-theme btn-lg d-block w-100 fw-500 mb-3">Submit</button>
+
+
+</form>
+</div>
+<div class="card-arrow">
+<div class="card-arrow-top-left"></div>
+<div class="card-arrow-top-right"></div>
+<div class="card-arrow-bottom-left"></div>
+<div class="card-arrow-bottom-right"></div>
+</div>
+
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+{% endblock %}

@@ -1,0 +1,50 @@
+{% extends "wallet/base.html" %}
+
+{% load static %}
+
+{% block content %}
+
+{% include "wallet/sidebar.html" %}
+
+<div class="login">
+
+<div class="login-content">
+<form action="" method="POST" name="login_form">
+	{% csrf_token %}
+<h1 class="text-center">Send Token</h1>
+
+
+<div class="mb-3">
+<div class="d-flex">
+<label class="form-label">Recipient <span class="text-danger"></span></label>
+</div>
+<input name="address" type="text" class="form-control form-control-lg bg-white bg-opacity-5" placeholder="Address" />
+</div>
+
+<div class="mb-3">
+<div class="d-flex">
+<label class="form-label">Amount <span class="text-danger"></span></label>
+<a href="#" class="ms-auto text-white text-decoration-none text-opacity-50">Max:0.00</a>
+</div>
+<input name="" type="text" class="form-control form-control-lg bg-white bg-opacity-5" value="" placeholder="" />
+</div>
+
+<div class="mb-3">
+<div class="d-flex">
+<label class="form-label">Message<span class="text-danger"></span></label>
+
+</div>
+<textarea type="text" class="form-control form-control-lg bg-white bg-opacity-5" value="" placeholder="message" ></textarea> 
+</div>
+
+<button type="submit" class="btn btn-outline-theme btn-lg d-block w-100 fw-500 mb-3">Send</button>
+<div class="text-center text-white text-opacity-50">
+ensure receipient's address is on the <a href="">Algorand blockchain</a>.
+</div>
+</form>
+</div>
+
+</div>
+
+
+{% endblock %}
